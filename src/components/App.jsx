@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { Profile } from './Profile';
 import userData from './info/user.json';
 
-console.log(userData);
-
 export const App = () => {
   return (
     <div
@@ -16,7 +14,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile>{userData.username}</Profile>
+      <Profile user={userData} />
     </div>
   );
 };
