@@ -1,3 +1,9 @@
+import styled from 'styled-components';
+import { Profile } from './Profile';
+import userData from './info/user.json';
+
+console.log(userData);
+
 export const App = () => {
   return (
     <div
@@ -7,10 +13,10 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Profile>{userData.username}</Profile>
     </div>
   );
 };
