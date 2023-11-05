@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { Profile } from './Profile';
 import userData from './info/user.json';
 
