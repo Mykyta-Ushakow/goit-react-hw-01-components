@@ -20,10 +20,7 @@ const TransactionTable = styled('table')`
   td {
     padding: 5px;
     text-transform: capitalize;
-  }
-
-  td:not(:first-child) {
-    border-left: 1px solid black;
+    text-align: center;
   }
 
   .even-row {
