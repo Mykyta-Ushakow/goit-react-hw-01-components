@@ -1,20 +1,35 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
+
+import userData from '../info/user.json';
+import statisticsData from '../info/data.json';
+import friendsData from '../info/friends.json';
+import transactionsData from '../info/transactions.json';
+
 import { Profile } from './Profile';
-import userData from './info/user.json';
+import { Statistics } from './Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory';
+
+const AppDiv = styled('div')`
+  padding-top: 30,
+  padding-bottom: 30,
+  display: 'flex',
+  flex-direction: 'column',
+  gap: 100,
+  justify-content: 'center',
+  align-items: 'center',
+  font-size: 40,
+  color: '#010101',
+  background-color: '#c2baba',
+`;
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <AppDiv>
       <Profile user={userData} />
-    </div>
+      <Statistics stats={statisticsData} title="Upload stats" />
+      <FriendList list={friendsData} />
+      <TransactionHistory items={transactionsData} />
+    </AppDiv>
   );
 };
