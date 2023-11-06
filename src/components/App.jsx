@@ -11,16 +11,16 @@ import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory';
 
 const AppDiv = styled('div')`
-  padding-top: 30,
-  padding-bottom: 30,
-  display: 'flex',
-  flex-direction: 'column',
-  gap: 100,
-  justify-content: 'center',
-  align-items: 'center',
-  font-size: 40,
-  color: '#010101',
-  background-color: '#c2baba',
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #010101;
+  background-color: #c2baba;
 `;
 
 export const App = () => {
